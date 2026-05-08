@@ -30,9 +30,10 @@ public class Applicant {
     private String zip;
     private String country;
     private String nationality;
+    private String status;
 
 
-    public Applicant(int id, String first_name, String last_name, String email, String phone, LocalDateTime dateOfBirth, String gender, String address, String city, String state, String zip, String country, String nationality) {
+    public Applicant(int id, String first_name, String last_name, String email, String phone, LocalDateTime dateOfBirth, String gender, String address, String city, String state, String zip, String country, String nationality, String status) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
@@ -46,6 +47,7 @@ public class Applicant {
         this.zip = zip;
         this.country = country;
         this.nationality = nationality;
+        this.status = status;
     }
 
     public Applicant() {
@@ -155,6 +157,14 @@ public class Applicant {
         this.nationality = nationality;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Applicant{" +
@@ -171,6 +181,7 @@ public class Applicant {
                 ", zip='" + zip + '\'' +
                 ", country='" + country + '\'' +
                 ", nationality='" + nationality + '\'' +
+                ", status='" + status + '\'' +
                 '}';
     }
 }

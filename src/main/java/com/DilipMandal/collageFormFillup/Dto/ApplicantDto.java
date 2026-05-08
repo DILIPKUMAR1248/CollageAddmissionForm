@@ -19,4 +19,5 @@ public class ApplicantDto {
     private String zip;
     private String country;
     private String nationality;
+    private String status;
 }
